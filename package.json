@@ -1,0 +1,29 @@
+{
+  "name": "squadcomms",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm:dev:server\" \"npm:dev:client\"",
+    "dev:client": "vite --host 0.0.0.0",
+    "dev:server": "node --watch server/index.js",
+    "build": "vite build",
+    "start": "node server/index.js"
+  },
+  "dependencies": {
+    "@livekit/components-styles": "^1.1.6",
+    "dotenv": "^18.0.8",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "livekit-client": "^2.15.6",
+    "livekit-server-sdk": "^2.9.6",
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.2",
+    "vite": "^6.0.7"
+  }
+}
